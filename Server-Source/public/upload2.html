@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="upload2.css" type="text/css">    
+<meta charset="UTF-8">
+<title>Video_Upload</title>    
+</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {font-family: "Raleway", Arial, Helvetica, sans-serif}
+        ul{
+            list-style:none;
+            padding-left:5px;
+            word-spacing:5pt;
+    </style>
+    <body class="w3-content w3-border-left w3-border-right">
+        <form action="/upload" method="POST" enctype="multipart/form-data" autocomplete="off">     
+            <fieldset>
+                <legend>동영상 정보</legend>
+                <ul>
+                    <li>
+                        <label class="category" for="category">카테고리</label>
+                        <select name="category" id="category">
+                            <option value="university" selected>대진대학교 홍보 영상</option>
+                            <option value="special">교내 특강 영상</option>
+                            <option value="department">학과 영상</option>
+                            <option value="club">동아리 영상</option>
+                            <option value="etc">기타 영상</option>
+                        </select>
+                    </li> 
+                    <li>
+                        <label for="filename"></label>
+                        <input class="w3-input w3-border" type="text" name="filename" id="filename" placeholder="저장 파일명" autofocus required>
+                    </li>
+<!--         <li>
+             <label for="fileid"></label>
+             <input class="w3-input w3-border" type="text" name="fileid" id="fileid" placeholder="아이디" autofocus required>
+         </li>-->
+                    <li>
+                        <label for="filetoupload" ><h3>영상촬영 및 탐색</h3></label>
+                        <input class="w3-input w3-border" type="file" name="filetoupload" id="filetoupload" accept="video/*" required>
+                    </li>
+                    
+                    <li>
+                        <label for="imageupload" ><h3>대표이미지 설정</h3></label>
+                        <input class="w3-input w3-border" type="file" name="imageupload" id="imageupload" required>
+                    </li>
+                </ul>
+            </fieldset>
+            
+                        <label for="tag"></label>
+                        <input class="w3-input w3-border" type="text" name="tag" id="tag" placeholder="태그를 입력하세요." autofocus required>
+                    
+            <p><button class="w3-button w3-green w3-third" type="submit"><i class="fa fa-search w3-margin-right"></i>VideoUpload</button></p>
+            <p><button class="w3-button w3-blue w3-third" type="reset"><i class="fa fa-search w3-margin-right"></i>Reset</button></p>
+            <p><label class="w3-button w3-red w3-third" type="reset"><i class=" w3-margin-right"></i>아름다운 방송문화</label></p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+<iframe width="500" height="375" src="C:/red5-server/webapps/oflaDemo/streams/123.mp4" frameborder="0" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""></iframe>
+<script>
+    var vurl = $('iframe').attr('src').match(/C:\/red5-server\/webapps\/oflaDemo\/streams/123?([0-9]+)/i);
+    var vidStr = vurl.indexOf("video/"); var vid = vurl.slice(vidStr+6);
+    var ajaxUrl = 'http://vimeo.com/api/v2/video/'+vid+'.json'; 
+    $.ajax({ url: ajaxUrl, dataType: "json" }).done(function (data) { var vsrc = data[0]['thumbnail_large']; $('.thumbnail').append('<img src="'+vsrc+'">'); }).fail(function (data) { alert('비메오썸네일추출실패!'); }); 
+</script>

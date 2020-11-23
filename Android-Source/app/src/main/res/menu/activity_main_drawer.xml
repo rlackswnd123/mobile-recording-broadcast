@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/daejin"
+            android:title="DJ TV"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/university"
+            android:title="학교 홍보"
+            app:showAsAction="never"
+            />
+
+        <item
+            android:id="@+id/club"
+            android:title="동아리"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/department"
+            android:title="학과홍보"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/special"
+            android:title="교내특강"
+            app:showAsAction="never"
+            />
+        <item
+            android:id="@+id/etc"
+            android:title="기타방송"
+            app:showAsAction="never"
+            />
+
+    </group>
+
+
+
+</menu>
